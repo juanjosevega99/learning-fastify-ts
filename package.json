@@ -1,0 +1,20 @@
+{
+  "name": "fastify-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juan Jose Vega",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js",
+    "compile-schemas": "json2ts -i schemas -o types"
+  },
+  "dependencies": {
+    "fastify": "^3.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "json-schema-to-typescript": "^10.1.4",
+    "typescript": "^4.2.4"
+  }
+}
